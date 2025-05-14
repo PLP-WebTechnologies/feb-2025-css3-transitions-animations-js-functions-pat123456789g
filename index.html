@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Animation Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Animation Playground</h1>
+        
+        <div class="preferences">
+            <h2>User Preferences</h2>
+            <div class="preference-option">
+                <label for="theme">Select Theme:</label>
+                <select id="theme">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </select>
+            </div>
+            
+            <div class="preference-option">
+                <label for="animation">Favorite Animation:</label>
+                <select id="animation">
+                    <option value="bounce">Bounce</option>
+                    <option value="spin">Spin</option>
+                    <option value="pulse">Pulse</option>
+                    <option value="shake">Shake</option>
+                </select>
+            </div>
+            
+            <button id="savePrefs">Save Preferences</button>
+            <p id="prefsSaved" class="save-confirm">Preferences saved!</p>
+        </div>
+        
+        <div class="animation-area">
+            <h2>Animation Zone</h2>
+            <div id="animatedBox" class="animated-box"></div>
+            <button id="triggerAnimation">Play Animation</button>
+        </div>
+        
+        <div class="counter">
+            <h2>Visit Counter</h2>
+            <p>You've visited this page <span id="visitCount">0</span> times</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
